@@ -251,3 +251,47 @@ doctype_js = {"Sales Invoice" : "public/js/sales_invoice.js",
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Customer-custom_phone", 
+                    "Customer-custom_column_break_vf4p9", 
+                    "Customer-custom_details", 
+                    "Customer-custom_section_break_suq1l", 
+                    "Customer-custom_remarks", 
+                    "Customer-custom_column_break_y1pa2", 
+                    "Customer-custom_left_pd", 
+                    "Customer-custom_column_break_aq0vo", 
+                    "Customer-custom_next_examination", 
+                    "Customer-custom_right_pd",
+                    "Customer-custom_section_break_1hlof", 
+                    "Customer-custom_date", 
+                    "Customer-custom_column_break_7qbpu", 
+                    "Customer-custom_age", 
+                    "Customer-custom_column_break_f5r5q", 
+                    "Customer-custom_patient_name", 
+                    "Customer-custom_prescription"
+                ],
+            ],
+        ],
+       
+    },
+    {
+     "doctype": "Property Setter",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+				"Customer-main-field_order",
+               
+                ],
+            ],
+        ],
+    }
+]
