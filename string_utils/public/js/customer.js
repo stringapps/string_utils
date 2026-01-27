@@ -1,9 +1,12 @@
 frappe.ui.form.on('Customer', {
     refresh(frm) {
-    //    if (1===1) {
-    //     frappe.msgprint(__('Hiding Custom Prescription Tab'));
-    //         frm.set_df_property('custom_prescription', 'hidden', 1); // Hide the tab
-    //         // frm.refresh_field('custom_prescription');
-    //     }
+        frm.add_custom_button(__('New Prescription'), function() {
+            frappe.new_doc('Prescription', {
+                customer: frm.doc.name
+            });
+        });
+        frm.add_custom_button(__('View Prescriptions'), function() {
+            frappe.set_route('List', 'Prescription', { customer: frm.doc.name });
+        });
     },
 });

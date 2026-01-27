@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PT-{MM}-{DD}-{#####}",
+ "creation": "2026-01-27 16:31:17.889986",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "patient_name",
+  "age",
+  "column_break_tghz",
+  "phone",
+  "column_break_cinw",
+  "date",
+  "section_break_yrcu",
+  "left_column",
+  "sphere_sph",
+  "cylinder_cyl",
+  "axis",
+  "addition_near",
+  "left_pd",
+  "column_break_zajd",
+  "right_column",
+  "sphere_sph_r",
+  "cylinder_cyl_r",
+  "axis_r",
+  "addition_near_r",
+  "right_pd",
+  "section_break_sjeg",
+  "next_examination",
+  "column_break_zyvg",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tghz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cinw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yrcu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "left_column",
+   "fieldtype": "Column Break",
+   "label": "LEFT EYE(OS)"
+  },
+  {
+   "fieldname": "sphere_sph",
+   "fieldtype": "Float",
+   "label": "SPHERE SPH"
+  },
+  {
+   "fieldname": "cylinder_cyl",
+   "fieldtype": "Float",
+   "label": "CYLINDER CYL"
+  },
+  {
+   "fieldname": "axis",
+   "fieldtype": "Float",
+   "label": "AXIS"
+  },
+  {
+   "fieldname": "right_column",
+   "fieldtype": "Column Break",
+   "label": "RIGHT EYE(OD)"
+  },
+  {
+   "fieldname": "addition_near",
+   "fieldtype": "Data",
+   "label": "ADDITION NEAR"
+  },
+  {
+   "default": "0",
+   "fieldname": "right_pd",
+   "fieldtype": "Check",
+   "label": "RIGHT PD"
+  },
+  {
+   "fieldname": "sphere_sph_r",
+   "fieldtype": "Float",
+   "label": "SPHERE SPH"
+  },
+  {
+   "default": "0",
+   "fieldname": "left_pd",
+   "fieldtype": "Check",
+   "label": " LEFT PD"
+  },
+  {
+   "fieldname": "cylinder_cyl_r",
+   "fieldtype": "Float",
+   "label": "CYLINDER CYL"
+  },
+  {
+   "fieldname": "axis_r",
+   "fieldtype": "Float",
+   "label": "AXIS"
+  },
+  {
+   "fieldname": "addition_near_r",
+   "fieldtype": "Data",
+   "label": "ADDITION NEAR"
+  },
+  {
+   "fieldname": "section_break_sjeg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "next_examination",
+   "fieldtype": "Data",
+   "label": "Next Examination"
+  },
+  {
+   "fieldname": "column_break_zyvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_zajd",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-27 16:44:50.431259",
+ "modified_by": "Administrator",
+ "module": "String Utils",
+ "name": "Prescription",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
