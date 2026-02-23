@@ -112,7 +112,7 @@
   {
    "default": "0",
    "fieldname": "right_pd",
-   "fieldtype": "Check",
+   "fieldtype": "Data",
    "label": "RIGHT PD"
   },
   {
@@ -123,7 +123,7 @@
   {
    "default": "0",
    "fieldname": "left_pd",
-   "fieldtype": "Check",
+   "fieldtype": "Data",
    "label": " LEFT PD"
   },
   {
@@ -167,7 +167,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-27 16:44:50.431259",
+ "modified": "2026-02-23 16:29:32.155700",
  "modified_by": "Administrator",
  "module": "String Utils",
  "name": "Prescription",
