@@ -86,17 +86,17 @@
   },
   {
    "fieldname": "sphere_sph",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "SPHERE SPH"
   },
   {
    "fieldname": "cylinder_cyl",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "CYLINDER CYL"
   },
   {
    "fieldname": "axis",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "AXIS"
   },
   {
@@ -110,30 +110,28 @@
    "label": "ADDITION NEAR"
   },
   {
-   "default": "0",
    "fieldname": "right_pd",
    "fieldtype": "Data",
    "label": "RIGHT PD"
   },
   {
    "fieldname": "sphere_sph_r",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "SPHERE SPH"
   },
   {
-   "default": "0",
    "fieldname": "left_pd",
    "fieldtype": "Data",
    "label": " LEFT PD"
   },
   {
    "fieldname": "cylinder_cyl_r",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "CYLINDER CYL"
   },
   {
    "fieldname": "axis_r",
-   "fieldtype": "Float",
+   "fieldtype": "Data",
    "label": "AXIS"
   },
   {
@@ -167,7 +165,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-23 16:29:32.155700",
+ "modified": "2026-02-28 08:50:58.758071",
  "modified_by": "Administrator",
  "module": "String Utils",
  "name": "Prescription",
